@@ -10,6 +10,15 @@
     <meta charset='utf-8'>
   </head>
   <body>
-    <p>@Model.Noun</p>
+    <p>Hello and welcome!</p>
+    <p>Please choose the type of Madlibs story you'd like to create:</p>
+    <form action="/story" method="post">
+            <select id="chooseMadLibs">
+                <option>Adventure</option>
+                <option>Magic</option>
+                <option>Spooky</option>
+            </select>
+            <button type="submit" class="button" id="button">Submit</button>
+    </form>
   </body>
   </html>
