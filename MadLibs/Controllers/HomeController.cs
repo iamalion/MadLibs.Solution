@@ -11,18 +11,18 @@ namespace MadLibs.Controllers
             LandingPage myLandingPage = new LandingPage();
             return View(myLandingPage);
         }
-        [Route("/form")]
-        public ActionResult Form() 
+        [Route("/adventure-form")]
+        public ActionResult AdventureForm() 
         {
             return View(); 
         }
 
-        [Route("/story")]
+        [Route("/adventure-story")]
         public ActionResult Story(string noun)
         {
-            MadLibsVariable myMadLibsVariable = new MadLibsVariable();
-            myMadLibsVariable.Noun = noun;
-            return View(myMadLibsVariable);
+            MadLibsAdventure myMadLibsAdventure = new MadLibsAdventure();
+            myMadLibsAdventure.Animal = animal;
+            return View(myMadLibsAdventure);
         }
     }
 }

@@ -1,6 +1,6 @@
 namespace MadLibs.Models
 {
-    public class MadLibsVariable
+    public class MadLibsAdventure
     {
         public string Noun { get; set; }
         
