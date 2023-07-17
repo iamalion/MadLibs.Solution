@@ -8,9 +8,8 @@ namespace MadLibs.Controllers
         [Route("/")]
         public ActionResult Landing()
         {
-            MadLibsVariable myMadLibsVariable = new MadLibsVariable();
-            myMadLibsVariable.Noun = "cat";
-            return View(myMadLibsVariable);
+            LandingPage myLandingPage = new LandingPage();
+            return View(myLandingPage);
         }
         [Route("/form")]
         public ActionResult Form() 
