@@ -47,18 +47,18 @@ namespace MadLibs.Controllers
         }
 
         [Route("/magic-story")]
-        public ActionResult MagicStory(string adjective, string animal, string animalName, string Ability, string residence, string objectOne, string creature, string pluralNoun, string element)
+        public ActionResult MagicStory(string adjective, string animal, string animalName, string talent, string residence, string objectOne, string creature, string pluralNoun, string element)
         {
             MadLibsMagic myMadLibsMagic = new MadLibsMagic();
-            myMadLibsAdventure.AdjectiveOne = adjectiveOne;
-            myMadLibsAdventure.Animal = animal;
-            myMadLibsAdventure.AnimalName = animalName;
-            myMadLibsAdventure.Ability = ability;
-            myMadLibsAdventure.Residence = residence;
-            myMadLibsAdventure.ObjectOne = objectOne;
-            myMadLibsAdventure.Creature = creature;
-            myMadLibsAdventure.PluralNoun = pluranNoun;
-            myMadLibsAdventure.Element = element;
+            myMadLibsMagic.Adjective = adjective;
+            myMadLibsMagic.Animal = animal;
+            myMadLibsMagic.AnimalName = animalName;
+            myMadLibsMagic.Talent = talent;
+            myMadLibsMagic.Residence = residence;
+            myMadLibsMagic.ObjectOne = objectOne;
+            myMadLibsMagic.Creature = creature;
+            myMadLibsMagic.PluralNoun = pluralNoun;
+            myMadLibsMagic.Element = element;
 
             return View(myMadLibsMagic);
             
