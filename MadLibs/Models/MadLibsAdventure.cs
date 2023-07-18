@@ -16,9 +16,6 @@ namespace MadLibs.Models
         public string ObjectTwo { get; set; }
         public string NumberTwo { get; set; }
         public string AdjectiveTwo { get; set; }
-        public string PluralNounThree { get; set; }
-
-
-        
+        public string PluralNounThree { get; set; } 
     }
 }

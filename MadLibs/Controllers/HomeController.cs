@@ -39,5 +39,31 @@ namespace MadLibs.Controllers
             
             return View(myMadLibsAdventure);
         }
+
+        [Route("/magic-form")]
+        public ActionResult MagicForm()
+        {
+            return View();
+        }
+
+        [Route("/magic-story")]
+        public ActionResult MagicStory(string adjective, string animal, string animalName, string Ability, string residence, string objectOne, string creature, string pluralNoun, string element)
+        {
+            MadLibsMagic myMadLibsMagic = new MadLibsMagic();
+            myMadLibsAdventure.AdjectiveOne = adjectiveOne;
+            myMadLibsAdventure.Animal = animal;
+            myMadLibsAdventure.AnimalName = animalName;
+            myMadLibsAdventure.Ability = ability;
+            myMadLibsAdventure.Residence = residence;
+            myMadLibsAdventure.ObjectOne = objectOne;
+            myMadLibsAdventure.Creature = creature;
+            myMadLibsAdventure.PluralNoun = pluranNoun;
+            myMadLibsAdventure.Element = element;
+
+            return View(myMadLibsMagic);
+            
+            
+        }
+        
     }
 }
