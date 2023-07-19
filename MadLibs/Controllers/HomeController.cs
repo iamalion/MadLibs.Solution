@@ -61,8 +61,34 @@ namespace MadLibs.Controllers
             myMadLibsMagic.Element = element;
 
             return View(myMadLibsMagic);
-            
-            
         }
+
+            [HttpPost("/spooky-form")]
+            public ActionResult SpookyForm()
+        {
+            return View();
+        }
+        [HttpPost("/spooky-story")]
+        public ActionResult SpookyStory(string animalName, string timePeriod, string residence, string adjective, string creature, string color, string sound, string objectOne, string number, string hour, string emotion, string element ) 
+    
+        {
+            MadLibsSpooky myMadLibsSpooky = new MadLibsSpooky();
+            myMadLibsSpooky.AnimalName = animalName;
+            myMadLibsSpooky.TimePeriod = timePeriod;
+            myMadLibsSpooky.Residence = residence;
+            myMadLibsSpooky.Adjective = adjective;
+            myMadLibsSpooky.Creature = creature;
+            myMadLibsSpooky.Color = color;
+            myMadLibsSpooky.Sound = sound;
+            myMadLibsSpooky.ObjectOne = objectOne;
+            myMadLibsSpooky.Number = number;
+            myMadLibsSpooky.Hour = hour;
+            myMadLibsSpooky.Emotion = emotion;
+            myMadLibsSpooky.Element = element;
+
+            return View(myMadLibsSpooky);
+
+        }
+            
     }
 }
